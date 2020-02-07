@@ -5,6 +5,10 @@ using UnityEngine;
 public class DontDestroySpawn : MonoBehaviour
 {
     private static DontDestroySpawn dontDestroy;
+
+    /// <summary>
+    /// When reloading scene it makes don't destroy our Spawn Points
+    /// </summary>
     private void Awake()
     {
         
@@ -21,15 +25,5 @@ public class DontDestroySpawn : MonoBehaviour
         }
         DontDestroyOnLoad(dontDestroy.gameObject);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

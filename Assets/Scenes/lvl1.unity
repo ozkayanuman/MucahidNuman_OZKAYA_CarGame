@@ -2561,6 +2561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7917c92f355cbf4c8a6fffe9b425cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastColor: {r: 1, g: 0, b: 0, a: 1}
   destinations:
   - {fileID: 1453899149}
   - {fileID: 1596065695}

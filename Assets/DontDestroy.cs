@@ -5,6 +5,10 @@ using UnityEngine;
 public class DontDestroy : MonoBehaviour
 {
     private static DontDestroy dontDestroy;
+
+    /// <summary>
+    /// When reloading scene it makes don't destroy our Destination Points
+    /// </summary>
     private void Awake()
     {
         if (DontDestroy.dontDestroy == null)

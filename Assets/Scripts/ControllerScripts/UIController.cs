@@ -17,7 +17,7 @@ public class UIController : MonoBehaviour
     public Text EndLevelPanelLevelNoText, CurrentLevelText;
 
     /// <summary>
-    /// what the buttons at the end of the section set to do
+    /// Assign function to buttons and update text areas.
     /// setting current level
     /// </summary>
     private void Start()
@@ -73,6 +73,7 @@ public class UIController : MonoBehaviour
     private void PlayAgain()
     {
         GameController.gameController.ClearScene();
+        GameController.gameController.lastColor=Color.red;
         GameController.gameController.stage = 1;
         GameController.gameController.ReLoadCurrentScene();
     }

@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour
     private bool pressed = false;
 
 
-   
     void Start()
     {
         timer = mainTimer;      //Determines the start time

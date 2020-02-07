@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Chose control type (pc or mobile)
+/// </summary>
 public enum controlMode
 {
     KeyBoard, Touch

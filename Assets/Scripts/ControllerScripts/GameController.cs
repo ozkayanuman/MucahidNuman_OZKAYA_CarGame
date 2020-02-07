@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-
-    private Color lastColor = Color.red;
+    
+    public Color lastColor = Color.red;
 
     public static GameController gameController;
     
@@ -19,7 +19,9 @@ public class GameController : MonoBehaviour
 
     public List<GameObject> successedCars;
 
-
+    /// <summary>
+    /// Making game controller to singelton and when reloading scene it makes don't destroy our game controller
+    /// </summary>
     private void Awake()
     {
         destinations[0].SetActive(true);
@@ -38,7 +40,8 @@ public class GameController : MonoBehaviour
     }
 
     /// <summary>
-    /// Setting Destination pointsç
+    /// Seting Destination points.
+    /// Showing current destination point.
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
@@ -62,6 +65,7 @@ public class GameController : MonoBehaviour
 
     /// <summary>
     /// Setting spawn points.
+    /// Starting current spawn point.
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
@@ -86,7 +90,6 @@ public class GameController : MonoBehaviour
     public void FreezeGame()
     {
         GameObject playerGO = GameObject.FindGameObjectWithTag("Player");
-        //playerGO.GetComponent<CarController>().DisablePlayerMovement();
         Time.timeScale = 0;
     }
 
@@ -100,15 +103,13 @@ public class GameController : MonoBehaviour
         GameObject playerGO = GameObject.FindGameObjectWithTag("Player");
         playerGO.GetComponent<CarController>().EnablePlayerMovement();
 
-        //GameObject myUI = GameObject.FindGameObjectWithTag("UserInterface");
-        //myUI.GetComponent<CarController>().UpdateCurrentLevelText();
-
+     
         Time.timeScale = 1;
         SceneManager.sceneLoaded -= DefreezeGame;
     }
 
     /// <summary>
-    ///  Allows determination of car colors
+    ///Sets a different car color for each level
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
@@ -118,7 +119,7 @@ public class GameController : MonoBehaviour
         GameObject playerGO = GameObject.FindGameObjectWithTag("Player");
         playerGO.GetComponent<SpriteRenderer>().color = lastColor;
 
-        SceneManager.sceneLoaded -= SetCarColor;
+        SceneManager.sceneLoaded -= SetCarColor;            //When function complete is running, removes itself from the work list
     }
 
     #region SCENE MANAGEMENT
@@ -140,7 +141,7 @@ public class GameController : MonoBehaviour
                 );
         }
 
-        SceneManager.sceneLoaded += SetCarColor;
+        SceneManager.sceneLoaded += SetCarColor;        //After scene loaded run this functions.
         SceneManager.sceneLoaded += DefreezeGame;
         SceneManager.sceneLoaded += SetDestination;
         SceneManager.sceneLoaded += SetSpawnPoint;
@@ -154,6 +155,7 @@ public class GameController : MonoBehaviour
     public void LoadNextScene()
     {
         stage = 1;
+        lastColor = Color.red;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneInex = currentSceneIndex + 1;
 
@@ -172,7 +174,7 @@ public class GameController : MonoBehaviour
     }
 
     /// <summary>
-    ///  Clears the screen for the new level.
+    ///  Clears the screen for the new level.(for ex. old cars from old levels.)
     /// </summary>
     public void ClearScene()
     {

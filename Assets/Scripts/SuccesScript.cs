@@ -24,7 +24,7 @@ public class SuccesScript : MonoBehaviour
             GameController.gameController.successedCars.Add(collision.gameObject);
 
 
-            if (GameController.gameController.stage > 8)    //Determines when the EndLevelPanel is displayed 
+            if (GameController.gameController.stage > 1)    //Determines when the EndLevelPanel is displayed 
             {
                 GameObject myUIManagerGameObject = GameObject.FindGameObjectWithTag("UserInterface");
                 myUIManagerGameObject.GetComponent<UIController>().ShowEndLevelPanel();
