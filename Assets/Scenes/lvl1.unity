@@ -4024,13 +4024,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11476284, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: CarControlMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11476284, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: MaxSpeed
-      value: 4
+    - target: {fileID: 163658, guid: ec09879104996be4abf7530f01149b44, type: 3}
+      propertyPath: m_Name
+      value: Audi
       objectReference: {fileID: 0}
     - target: {fileID: 430436, guid: ec09879104996be4abf7530f01149b44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4064,41 +4060,19 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6059640, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_IsTrigger
+    - target: {fileID: 430436, guid: ec09879104996be4abf7530f01149b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6059640, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8b0e397febd64674eb5730393aac3896,
-        type: 3}
-    - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_FlipY
+    - target: {fileID: 430436, guid: ec09879104996be4abf7530f01149b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_Color.g
+    - target: {fileID: 430436, guid: ec09879104996be4abf7530f01149b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6952576663225253162, guid: ec09879104996be4abf7530f01149b44, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec09879104996be4abf7530f01149b44, type: 3}
 --- !u!1 &1941188088
 GameObject:

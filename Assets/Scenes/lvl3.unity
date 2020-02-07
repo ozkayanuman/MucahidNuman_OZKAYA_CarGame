@@ -2685,6 +2685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7917c92f355cbf4c8a6fffe9b425cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastColor: {r: 1, g: 0, b: 0, a: 1}
   destinations:
   - {fileID: 1453899149}
   - {fileID: 1596065695}
@@ -4342,7 +4343,7 @@ PrefabInstance:
     - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8b0e397febd64674eb5730393aac3896,
+      objectReference: {fileID: 21300000, guid: 9744809f90d79fd4c97f03ea2c153646,
         type: 3}
     - target: {fileID: 21200800, guid: ec09879104996be4abf7530f01149b44, type: 3}
       propertyPath: m_FlipY

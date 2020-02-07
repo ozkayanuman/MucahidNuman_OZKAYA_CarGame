@@ -69,7 +69,6 @@
     <Compile Include="Assets\Scripts\ControllerScripts\GameController.cs" />
     <Compile Include="Assets\Scripts\ControllerScripts\Timer.cs" />
     <Compile Include="Assets\Scripts\ControllerScripts\UIController.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\LevelReloader.cs" />
     <Compile Include="Assets\Scripts\SuccesScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
